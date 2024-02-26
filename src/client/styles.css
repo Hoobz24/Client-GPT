@@ -1,0 +1,274 @@
+/*
+ * Custom CSS
+ */
+
+
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url(./Poppins/Poppins-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Poppins-Dark";
+  src: url(./Poppins/Poppins-Black.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Poppins-Thin";
+  src: url(./Poppins/Poppins-Thin.ttf) format("truetype");
+}
+
+.bodyElement { background-color: #000033;}
+
+.navColor { background-color: #000033;}
+.font { font-family: "Poppins-Regular", sans-serif }
+
+.poppins_reg {
+  font-family: "Poppins-Regular", sans-serif;
+  color: #CCFFFF;
+
+}
+
+.poppins_dark {
+  font-family: "Poppins-Dark", sans-serif;
+  color: #CCFFFF;
+}
+
+.poppins_thin {
+  font-family: "Poppins-Thin", sans-serif
+}
+
+.corolColor {
+  color: #000099;
+  background-color: #000099;
+}
+
+.form-control{
+  border-color:#000099;
+  font-family: "Poppins-Dark", sans-serif;
+  color: #CCFFFF;
+}
+
+.api-style{
+  border-color:#000099;
+  font-family: "Poppins-Dark", sans-serif;
+  color: #CCFFFF;
+  padding-bottom: 10px;
+}
+
+.form-control:focus {
+  border-color: #000099;
+  background-color: #000099;
+  box-shadow: inset 0 0px 0px rgba(0, 0, 0, 0.075), 0 0 0px rgba(255, 0, 0, 0.6);
+  font-family: "Poppins-Dark", sans-serif;
+  color: #CCFFFF;
+}
+
+.blink {
+  animation: blinker 1.5s linear infinite;
+  color: #CCFFFF;
+  font-family: "Poppins-Dark";
+}
+@keyframes blinker {
+  50% {
+      opacity: 0;
+  }
+}
+
+.td {
+  padding-right: 30px;
+}
+
+
+
+
+/* CSS */
+.button-82-pushable {
+  position: relative;
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  outline-offset: 4px;
+  transition: filter 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-82-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: #CCFFFF;
+  will-change: transform;
+  transform: translateY(2px);
+  transition:
+    transform
+    600ms
+    cubic-bezier(.3, .7, .4, 1);
+}
+
+.button-82-edge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: linear-gradient(
+    to left,
+    #000099 0%,
+    #000099 8%,
+    #000099 92%,
+     #000099 100%
+  );
+}
+
+.button-82-front {
+  display: block;
+  position: relative;
+  padding: 12px 27px;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-family: "Poppins-Dark", sans-serif;
+  color: #CCFFFF;
+  background:  #000099;
+  will-change: transform;
+  transform: translateY(-4px);
+  transition:
+    transform
+    600ms
+    cubic-bezier(.3, .7, .4, 1);
+}
+
+@media (min-width: 768px) {
+  .button-82-front {
+    font-size: 1.25rem;
+    padding: 12px 42px;
+  }
+}
+
+.button-82-pushable:hover {
+  filter: brightness(110%);
+  -webkit-filter: brightness(110%);
+}
+
+.button-82-pushable:hover .button-82-front {
+  transform: translateY(-6px);
+  transition:
+    transform
+    250ms
+    cubic-bezier(.3, .7, .4, 1.5);
+}
+
+.button-82-pushable:active .button-82-front {
+  transform: translateY(-2px);
+  transition: transform 34ms;
+}
+
+.button-82-pushable:hover .button-82-shadow {
+  transform: translateY(4px);
+  transition:
+    transform
+    250ms
+    cubic-bezier(.3, .7, .4, 1.5);
+}
+
+.button-82-pushable:active .button-82-shadow {
+  transform: translateY(1px);
+  transition: transform 34ms;
+}
+
+.button-82-pushable:focus:not(:focus-visible) {
+  outline: none;
+}
+.animated-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 12px 32px;
+  border: 4px solid;
+  border-color: transparent;
+  font-size: 16px;
+  font-family: "Poppins-Dark", sans-serif;
+  background-color: inherit;
+  border-radius: 75px;
+  font-weight: 500;
+  color: #CCFFFF;
+  box-shadow: 0 0 0 2px #CCFFFF;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button svg {
+  position: absolute;
+  width: 24px;
+  fill: #CCFFFF;
+  z-index: 9;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button .arr-1 {
+  right: 16px;
+}
+
+.animated-button .arr-2 {
+  left: -25%;
+}
+
+.animated-button .circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  background-color: #CCFFFF;
+  border-radius: 50%;
+  opacity: 0;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button .text {
+  position: relative;
+  z-index: 1;
+  transform: translateX(-12px);
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button:hover {
+  box-shadow: 0 0 0 12px transparent;
+  color: #212121;
+  border-radius: 12px;
+}
+
+.animated-button:hover .arr-1 {
+  right: -25%;
+}
+
+.animated-button:hover .arr-2 {
+  left: 16px;
+}
+
+.animated-button:hover .text {
+  transform: translateX(12px);
+}
+
+.animated-button:hover svg {
+  fill: #212121;
+}
+
+.animated-button:active {
+  scale: 0.95;
+  box-shadow: 0 0 0 4px #CCFFFF;
+}
+
+.animated-button:hover .circle {
+  width: 220px;
+  height: 220px;
+  opacity: 1;
+}
